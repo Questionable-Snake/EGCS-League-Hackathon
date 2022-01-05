@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+.container {
+    width: 450px;
+    max-width: 450px;
+    margin: 18px;
+    padding: 36px;
+    border-radius: 4px;
+    background-color: #2b2d2f;
+}
+
+.container,
+.form__input,
+.form__button {
+    font: 500 18px 'Quicksand', sans-serif;
+}
+
+.form--hidden {
+    display: none
+}
+
+.form>*:first-child {
+    margin-top: 0
+}
+
+.form>*:first-child {
+    margin-top: 0
+}
+
+.form__message {
+    text-align: center;
+    margin-bottom: 18px
+}
+
+.form__message--success {
+    color: #4bb544
+}
+
+.form__message--error {
+    color: #cc3333
+}
+
+.form__input {
+    margin-bottom: 18px
+}
+
+.form__input {
+    display: block;
+    width: 100%;
+    padding: 13.5px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid #dddddd;
+    outline: none;
+    background: #2b2d2f;
+    transition: background 0.2s, border-color 0.2s;
+}
+
+.form__input:focus {
+    border-color: #009579;
+    background: #6a6a6a;
+}
+
+.form__input--error {
+    color: #cc3333;
+    border-color: #cc3333;
+}
+
+.form__input-error-message {
+    margin-top: 9px;
+    font-size: 15.3;
+    color: #cc3333;
+}
+
+.form__button {
+    width: 100%;
+    padding: 18px 36px;
+    font-weight: bold;
+    font-size: 19.8;
+    color: #2b2d2f;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+    background: #009579
+}
+
+.form__button:hover {
+    background: #007f67
+}
+
+.form__button:active {
+    transform: scale(0.98);
+}
+
+.form__text {
+    text-align: center;
+}
+
+.form__link {
+    color: #14d414;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.form__link:hover {
+    text-decoration: underline
+}
+
+.form__input2 {
+    margin: 18px
+}
+
+.login-button {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    height: 35px;
+    width: 150px;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    color: #14d414;
+    background-color: #23272a;
+    border: 2px solid #14d414;
+    border-radius: 4px
+}

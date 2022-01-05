@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+:root {
+    --bg-color: #27272a;
+    --typewriterSpeed: 6s
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    color: rgb(20, 212, 20);
+    background: var(--bg-color)
+}
+
+.welcome {
+    background-color: #23272a;
+    height: 500px;
+    width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.list {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: rgb(20, 212, 20);
+    text-decoration: none;
+}
+
+.link {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: rgb(20, 212, 20);
+    text-decoration: none;
+}
+
+h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: rgb(20, 212, 20);
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10%;
+    border-bottom: 3px solid rgb(20, 212, 20)
+}
+
+.logo {
+    cursor: pointer;
+    height: 70px;
+    width: 70px
+}
+
+.nav__links {
+    list-style: none;
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav__links {
+    transition: all 0.3s ease 0s
+}
+
+.nav__links:hover {
+    color: #0088a9
+}
+
+.introduction {
+    display: inline-block;
+    background-color: #23272a;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 50px
+}
+
+.login-button {
+    margin-top: 10px;
+}
+
+p {
+    font-size: 16px;
+    position: relative;
+    font-family: "Source Code Pro", monospace;
+    position: relative;
+    width: max-content;
+}
+
+p::before,
+p::after {
+    content: '';
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    position: absolute
+}
+
+p::before {
+    background: var(--bg-color);
+    animation: typewriter var(--typewriterSpeed) steps(169) 0.6s forwards;
+}
+
+p::after {
+    width: 0.125em;
+    background: white;
+    animation: typewriter var(--typewriterSpeed) steps(169) 0.6s forwards, blink 600ms steps(24) infinite;
+}
+
+@keyframes typewriter {
+    to {
+        left: 100%
+    }
+}
+
+@keyframes blink {
+    to {
+        background: transparent
+    }
+}
