@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>CS League Hackathon</title>
+    <!--<script defer src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.4.0/socket.io.js"></script>-->
+    <!--<script defer src="js/chat.js"></script>-->
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/login.css" rel="stylesheet" type="text/css" />
+    <link href="css/popup.css" rel="stylesheet" type="text/css" />
+    <link rel='shortcut icon' type='image/x-icon' href='imgs/favicon.ico' />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="main-body">
+        <div class="header">
+            <center>
+                <h1> Welcome to the CSLeague CTF Challenges!</h1>
+            </center>
+
+            <center>
+                <p id="explanation"> Welcome to the CS League Hackathon! Here you will have to find the flag(anwser) by hacking. There are three problems that you can complete all with different difficulties. Once you find the flags, you can submit them. First person to finish
+                    all of them, or the person with the most points when the event ends wins. Good luck! </p>
+            </center>
+
+            <table style="width:100%">
+                <tr>
+                    <th>Hack Sheasy</th>
+                    <th>Hack Brute</th>
+                    <th>Hack gnihtyreve</th>
+
+                </tr>
+                <tr>
+                    <td>Difficulty: Easy<br> Ip: 10.0.0.1<br>
+                        <br>
+
+                        <button type="button" value="send" id="submit-button1" onclick="flag1Checker()">Submit</button>
+                        <input type="text" name="answer" id="message-input" placeholder="cat /home/a/flag1.txt">
+
+                    </td>
+                    <td>Difficulty: Medium<br> Ip: 10.0.0.1<br><br>
+
+                        <button type="button" value="send" id="submit-button2" onclick="flag2Checker()">Submit</button>
+                        <input type="text" name="answer" id="message-input2" placeholder="cat /home/a/flag2.txt">
+                    </td>
+                    <td>Difficulty: Hard<br> Ip: 10.0.0.1<br><br>
+
+                        <button type="submit" id="submit-button3" onclick="flag3Checker()">Submit</button>
+                        <input type="text" id="message-input3" placeholder="cat/home/a/flag3.txt">
+                    </td>
+                </tr>
+
+            </table>
+            <!--<div id="message-container"></div>
+            <form id="send-container">
+                <input type="text" id="message-input">
+                <button type="submit" id="send-button">Send</button>
+            </form>-->
+
+</body>
+<script src="js/script.js"></script>
+<script src="js/login.js"></script>
+<script src="js/popup.js"></script>
+
+</html>
