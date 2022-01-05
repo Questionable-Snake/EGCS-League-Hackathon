@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+body {
+    background-color: #23272a;
+    color: rgb(20, 212, 20);
+    height: 100vh;
+    font-family: "Montserrat"
+}
+
+table {
+    border-collapse: collapse;
+    margin-top: 100px;
+    float: left;
+    width: 100%
+}
+
+td {
+    border: 2px solid;
+    border-collapse: collapse;
+    margin-top: 10%;
+    height: 100px;
+    width: 33%;
+    padding: 5px;
+}
+
+#submit-button1 {
+    color: rgb(20, 212, 20);
+    border: 1px rgb(20, 212, 20) solid;
+    border-radius: 5px;
+}
+
+#submit-button2 {
+    color: rgb(20, 212, 20);
+    border: 1px rgb(20, 212, 20) solid;
+    border-radius: 5px;
+}
+
+#submit-button3 {
+    color: rgb(20, 212, 20);
+    border: 1px rgb(20, 212, 20) solid;
+    border-radius: 5px;
+}
+
+#message-input {
+    border: 1px solid rgb(20, 212, 20);
+    color: rgb(20, 212, 20)
+}
+
+#message-input2 {
+    border: 1px solid rgb(20, 212, 20);
+    color: rgb(20, 212, 20)
+}
+
+#message-input3 {
+    border: 1px solid rgb(20, 212, 20);
+    color: rgb(20, 212, 20)
+}
+
+::placeholder {
+    color: rgb(20, 212, 20);
+    opacity: 1;
+}
+
+#message-container {
+    width: 80%;
+    max-width: 1200px;
+    height: 400px
+}
+
+#message-container div {
+    background-color: #CCC;
+    padding: 5px;
+}
+
+#message-container div:nth-child(2n) {
+    background-color: #FFF;
+}
+
+#send-container {
+    position: fixed;
+    padding-bottom: 30px;
+    bottom: 0;
+    background-color: white;
+    max-width: 1200px;
+    width: 80%;
+    display: flex;
+}
+
+#message-input {
+    flex-grow: 1;
+}
+
+button,
+input {
+    font-family: "Montserrat";
+    background: #23272a;
+}
